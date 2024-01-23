@@ -19,7 +19,7 @@ const app = {
           console.log(expired, token);
           //將 token 寫入 cookie
           document.cookie = `yuanToken=${token}; expires=${new Date(expired)}; path=/`;
-          window.location = 'products.html'
+          window.location = 'index.html'
         })
         .catch((err) => {
           alert(err.response.data.message)
